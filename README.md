@@ -1,6 +1,6 @@
 # Farmponds
 
-**Farmponds is a repository for an application that can recognize farm ponds based on farm ponds in Western India. Our goal is to provide a easy and straight forward application for environmental researchers, NPOs and local governments to easily asses the impact of climate change on agriculture and its societal impact.**
+Farmponds is a repository for an application that can recognize farm ponds based on farm ponds in Western India. Our goal is to provide a easy and straight forward application for environmental researchers, NPOs and local governments to easily asses the impact of climate change on agriculture and its societal impact.
 
 We developed the computer vision pipeline based on pre-trained models and created a framework that includes data preprocessing, model training, and georeferencing for users to monitor the changes without extensive labor. The application takes a satellite image (TIFF, PNG) and labels artificial farm pond structures. The complete pipeline is currently work in progress, so here is the public repository where we show case how the application can work.
 
