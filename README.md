@@ -1,15 +1,9 @@
-# how to run whole pond_main_kadwanchi from scratch
+# farmponds
 
-1. image_cut.py image (to test), mask (to test mask) 
-    1. extra step to use image_null_detector py to get rid of borders in slider_all for test_kadwanchi after step 8
-2. keep masks with non zero data (test_masks_filter)
-3. copy paste test_mask to train_new nask and test to train_new
-4. make the trainset and the train mask match in the train_new and train_new mask files (train_selection)
-5. run create val_new to random select 5 out of 59 as val set vals_new mask created at the same time
-6. invert color to the opposite so that white is the target for both train_mask and val_mask (image_color_invert) 
-7. create custom coco dataset ipynb and put the jsons in corresponding folders (train_new val_new)
-8. pond_main_kadwanchi
-9. instance filter py
-10. array_merge_tiles.py
-11. georeference.py to set GPS (the lat longs are off as for 11/14)
-12. area_calculator.py to produce csv
+This is a repository for an application for that can recognize farm ponds based on farm ponds in Western India. Our goal is to provide a easy and straight forward application for environmental researchers, NPOs and local governments to easily asses the impact of climate change on agriculture and its societal impact.  We developed the computer vision model based on pre-trained models and created a framework that includes data preprocessing, model training, and georeferencing for users to monitor the changes without extensive labor. The application takes a satellite image and labels artificial farm pond structures. The pipeline is currently work in progress so here is the public repository we can showcase how the application works.
+
+
+# how to run whole application with user data from scratch
+1. preprocess the data (preprocessing.py takes a TIFF and splits the images into tiles with a fixed size)
+2. run the notebook with the pretrained model
+3. run the area_calculator.py to receive a list of labels and area estimates. Here we only provide the pixel version.
