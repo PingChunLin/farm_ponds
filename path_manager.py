@@ -10,15 +10,23 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Paths relative to the base directory
-DATA_DIR = os.path.join(BASE_DIR, 'data')
-LOGS_DIR = os.path.join(BASE_DIR, 'logs')
+DATA_DIR = os.path.join(BASE_DIR, 'data')  # input TIF
+TILES_DIR = os.path.join(DATA_DIR, 'tiles')  # Preprocessing ouput, image tiles
+MASK_TILES_DIR = os.path.join(DATA_DIR, 'tiles_masks') # Preprocessing ouput, mask tiles
+OUTPUT_DIR = os.path.join(BASE_DIR, 'output')
+MASK_MERGED = os.path.join(OUTPUT_DIR, 'merged.png')
+GEOREF_TIF = os.path.join(OUTPUT_DIR, 'output_georeferenced_image3_modified.tif') # georeferenced TIF
 CONFIG_DIR = os.path.join(BASE_DIR, 'config')
 
 # Export paths through a dictionary for easy access
 paths = {
     'base': BASE_DIR,
     'data': DATA_DIR,
-    'logs': LOGS_DIR,
+    'tiles': TILES_DIR,
+    'mask_tiles': MASK_TILES_DIR,
+    'output': OUTPUT_DIR,
+    'georef_input': MASK_MERGED,
+    'calc_input': GEOREF_TIF,
     'config': CONFIG_DIR,
 }
 
