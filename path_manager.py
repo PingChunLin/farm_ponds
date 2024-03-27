@@ -14,7 +14,10 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')  # input TIF
 TILES_DIR = os.path.join(DATA_DIR, 'tiles')  # Preprocessing ouput, image tiles
 MASK_TILES_DIR = os.path.join(DATA_DIR, 'tiles_masks') # Preprocessing ouput, mask tiles
 OUTPUT_DIR = os.path.join(BASE_DIR, 'output')
+PREDICTED_TILES_DIR = os.path.join(OUTPUT_DIR, 'predicted_tiles') # where main ipynb saves prediction results
+PREDICTED_ARRAYS_DIR = os.path.join(OUTPUT_DIR, 'predicted_tiles') # where prediction results are changed into np arrays
 MASK_MERGED = os.path.join(OUTPUT_DIR, 'merged.png')
+LOG = os.path.join(OUTPUT_DIR, 'tiles_failed_to_count.txt') # log for filtered out tiles in the mosaic
 GEOREF_TIF = os.path.join(OUTPUT_DIR, 'output_georeferenced_image3_modified.tif') # georeferenced TIF
 CONFIG_DIR = os.path.join(BASE_DIR, 'config')
 
@@ -25,6 +28,8 @@ paths = {
     'tiles': TILES_DIR,
     'mask_tiles': MASK_TILES_DIR,
     'output': OUTPUT_DIR,
+    'predicted_tiles': PREDICTED_TILES_DIR,
+    'predicted_arrays': PREDICTED_ARRAYS_DIR,
     'georef_input': MASK_MERGED,
     'calc_input': GEOREF_TIF,
     'config': CONFIG_DIR,
