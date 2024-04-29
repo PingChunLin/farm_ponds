@@ -1,0 +1,1 @@
+This folder contains the image tiles for the training dataset of the ponds pipeline.

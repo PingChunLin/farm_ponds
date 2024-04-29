@@ -1,0 +1,1 @@
+This folder contains the masks of the tiles for the validation dataset of the ponds pipeline.

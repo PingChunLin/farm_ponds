@@ -1,0 +1,1 @@
+This folder contains the output from different stages of the ponds pipeline.

@@ -1,0 +1,1 @@
+This folder contains the image tiles for the validation dataset of the ponds pipeline.

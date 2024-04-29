@@ -1,0 +1,1 @@
+This folder contains the image tiles that were filtered out during the preprocessing for the training dataset of the ponds pipeline. 
