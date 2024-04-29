@@ -25,11 +25,6 @@ For this demonstration, we will use farm ponds in Kadwanchi as an example. You c
 Figure 1: The Farmponds pipeline 
 
 
-### Running the demo:
-1. Label the data so it is ready to be processed into a training data for the pipeline.
-2. Run setup.py to install the required libraries for the ponds package. 
-3. Run the Jupyter notebook [pond_demo](./ponds_demo.ipynb) with the pretrained model. Users can customize the input image and fine-tune the model in the noetbook for optimal results.
-
 ### Geolocating the ponds 
 Georefercing the a part of the pipeline to make sure that the labeled farm ponds are geolocated accurately. To get the best results, the current version of georeferencing.py in the package requires manually entered Ground Control Points (GCPs). If you do not have GCPs, we recommend using GIS software such as QGIS to manually georeference the raster instead. 
 Please see the georeferencing tutorial for QGIS here: [https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html)
