@@ -29,36 +29,3 @@ Figure 1: The Farmponds pipeline
 Georefercing the a part of the pipeline to make sure that the labeled farm ponds are geolocated accurately. To get the best results, the current version of georeferencing.py in the package requires manually entered Ground Control Points (GCPs). If you do not have GCPs, we recommend using GIS software such as QGIS to manually georeference the raster instead. 
 Please see the georeferencing tutorial for QGIS here: [https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html)
 
-### Repository Structure
-
-ponds/
-│
-├── .gitignore                
-├── LICENSE                   
-├── README.md
-├── setup.py
-├── requirements.txt 
-├── ponds_demo.ipynb   
-│
-├── ponds/
-│   ├── README.md                      
-│   ├── __init__.py   
-│   ├── area_calculator.py
-│   ├── georeference.py
-│   ├── mosaic.py
-│   ├── preprocess.py
-│   └── src/                
-│       ├── __init__.py
-│       ├── create_annotations.py     
-│
-├── data/                      
-│   ├── train.tif          
-│   ├── mask.png            
-│   └── train/                
-│       ├── 
-│       ├── 
-│       └── 
-├── output/                      
-│   ├── prediction.tif          
-│   ├── mask.png            
-│   └── log.txt 
