@@ -22,8 +22,10 @@ For this demonstration, we will use farm ponds in Kadwanchi as an example. You c
 5. **Counting instances and estimating area**: We then run an analysis to count the ponds and estimate the area. Our algorithm does this by counting the closed contours of the ponds and estimates the area.
 
 ![Ponds workflow](./figures/ponds_workflow_figure.jpg)
-Figure 1: The Farmponds pipeline 
+Figure 1: The Farmponds pipeline
 
+![Ponds example](./figures/ponds_example.png)
+Figure 2: Example Prediction 
 
 ### Geolocating the ponds 
 Georefercing the a part of the pipeline to make sure that the labeled farm ponds are geolocated accurately. To get the best results, the current version of georeferencing.py in the package requires manually entered Ground Control Points (GCPs). If you do not have GCPs, we recommend using GIS software such as QGIS to manually georeference the raster instead. 
