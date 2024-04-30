@@ -24,7 +24,7 @@ For this demonstration, we will use farm ponds in Kadwanchi as an example. You c
 ![Ponds workflow](./figures/ponds_workflow_figure.jpg)
 Figure 1: The Farmponds pipeline
 
-![Ponds example](./figures/pond_example.png)
+![Ponds example](./figures/pond_example.png)\\
 Figure 2: Example Prediction 
 
 ### Geolocating the ponds 
